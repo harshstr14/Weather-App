@@ -20,6 +20,7 @@ Weatherly is a simple Android application that provides current weather informat
   <img src="assets/search_screen.jpg" alt="Search Feature" width="250/> 
 </p>
 
+
 ## 🛠 Technology Stack
 
 *   💻 **Kotlin:** The primary programming language for Android development.
