@@ -6,12 +6,12 @@ Weatherly is a simple Android application that provides current weather informat
 
 ## ✨ Features and Functionality
 
-*   **🔍 City Search:** Allows users to search for weather information by city name using a custom search view.
-*   **⏱ Real-time Weather Data:** Displays current weather information, including temperature, minimum/maximum temperature, humidity, wind speed, and pressure.
-*   **🌅 Sunrise/Sunset Times:** Provides sunrise and sunset times for the selected city.
-*   **☁ Weather Conditions:** Displays a description of the current weather conditions (e.g., "Clear", "Clouds", "Rain").
-*   **🎨 Dynamic Background:** Changes the background of the app based on the current weather conditions.
-*   **🚀 Splash Screen:** A splash screen is displayed on startup for 3 seconds using `MainScreen.kt`.
+*   ** 🔍 City Search:** Allows users to search for weather information by city name using a custom search view.
+*   ** ⏱ Real-time Weather Data:** Displays current weather information, including temperature, minimum/maximum temperature, humidity, wind speed, and pressure.
+*   ** 🌅 Sunrise/Sunset Times:** Provides sunrise and sunset times for the selected city.
+*   ** ☁ Weather Conditions:** Displays a description of the current weather conditions (e.g., "Clear", "Clouds", "Rain").
+*   ** 🎨 Dynamic Background:** Changes the background of the app based on the current weather conditions.
+*   ** 🚀 Splash Screen:** A splash screen is displayed on startup for 3 seconds using `MainScreen.kt`.
 
 ##🛠 Technology Stack
 
@@ -22,15 +22,15 @@ Weatherly is a simple Android application that provides current weather informat
 *   **🖇 View Binding:** Generates binding class for each XML layout file present in that module and allows you to more easily write code that interacts with views.
 *   **☁ OpenWeatherMap API:** A weather data API used to retrieve weather information.
 
-##📋 Prerequisites
+## 📋 Prerequisites
 
 Before running the application, ensure you have the following installed:
 
-*   **🏗 Android Studio:** The official Integrated Development Environment (IDE) for Android development.
-*   **📱 Android SDK:** The Android Software Development Kit, which provides the tools and libraries necessary for building Android applications.
-*   **⚙ Gradle:** The build automation system used by Android Studio.
+*   ** 🏗 Android Studio:** The official Integrated Development Environment (IDE) for Android development.
+*   ** 📱 Android SDK:** The Android Software Development Kit, which provides the tools and libraries necessary for building Android applications.
+*   ** ⚙ Gradle:** The build automation system used by Android Studio.
 
-##📥 Installation Instructions
+## 📥 Installation Instructions
 
 1.  **Clone the repository:**
 
@@ -52,7 +52,7 @@ Before running the application, ensure you have the following installed:
     *   Connect an Android device or start an Android emulator.
     *   Click the "Run" ▶ button in Android Studio or go to "Run" -> "Run 'app'".
 
-##📖 Usage Guide
+## 📖 Usage Guide
 
 1.  **Launching the application:**
 
@@ -64,7 +64,7 @@ Before running the application, ensure you have the following installed:
     *   Press the "Search" or "Enter" key on the keyboard.
     *   The application will display weather information for the specified city.
 
-##📡 API Documentation
+## 📡 API Documentation
 
 The application uses the OpenWeatherMap API to fetch weather data.
 
@@ -103,7 +103,7 @@ interface ApiInterface {
 }
 ```
 
-##🤝 Contributing Guidelines
+## 🤝 Contributing Guidelines
 
 Contributions to the Weatherly project are welcome! To contribute:
 
@@ -112,10 +112,10 @@ Contributions to the Weatherly project are welcome! To contribute:
 3.  Make your changes and commit them with descriptive commit messages.
 4.  Submit a pull request to the `master` branch.
 
-##📜 License Information
+## 📜 License Information
 
 This project does not specify a license.  All rights are reserved by the copyright holders.
 
-##📬 Contact/Support Information
+## 📬 Contact/Support Information
 
 For questions or support, please contact harshstr14 through GitHub.
