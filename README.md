@@ -6,29 +6,29 @@ Weatherly is a simple Android application that provides current weather informat
 
 ## ✨ Features and Functionality
 
-*   ** 🔍 City Search:** Allows users to search for weather information by city name using a custom search view.
-*   ** ⏱ Real-time Weather Data:** Displays current weather information, including temperature, minimum/maximum temperature, humidity, wind speed, and pressure.
-*   ** 🌅 Sunrise/Sunset Times:** Provides sunrise and sunset times for the selected city.
-*   ** ☁ Weather Conditions:** Displays a description of the current weather conditions (e.g., "Clear", "Clouds", "Rain").
-*   ** 🎨 Dynamic Background:** Changes the background of the app based on the current weather conditions.
-*   ** 🚀 Splash Screen:** A splash screen is displayed on startup for 3 seconds using `MainScreen.kt`.
+*   🔍**City Search:** Allows users to search for weather information by city name using a custom search view.
+*   ⏱ **Real-time Weather Data:** Displays current weather information, including temperature, minimum/maximum temperature, humidity, wind speed, and pressure.
+*   🌅 **Sunrise/Sunset Times:** Provides sunrise and sunset times for the selected city.
+*   ☁ **Weather Conditions:** Displays a description of the current weather conditions (e.g., "Clear", "Clouds", "Rain").
+*   🎨 **Dynamic Background:** Changes the background of the app based on the current weather conditions.
+*   🚀 **Splash Screen:** A splash screen is displayed on startup for 3 seconds using `MainScreen.kt`.
 
-##🛠 Technology Stack
+## 🛠 Technology Stack
 
-*   **💻 Kotlin:** The primary programming language for Android development.
-*   **📱 Android SDK:** The software development kit for building Android applications.
-*   **🌐 Retrofit:** A type-safe HTTP client for Android and Java. Used to make API requests to OpenWeatherMap.
-*   **📦 Gson:** A Java serialization/deserialization library to convert JSON into Kotlin objects.
-*   **🖇 View Binding:** Generates binding class for each XML layout file present in that module and allows you to more easily write code that interacts with views.
-*   **☁ OpenWeatherMap API:** A weather data API used to retrieve weather information.
+*   💻 **Kotlin:** The primary programming language for Android development.
+*   📱 **Android SDK:** The software development kit for building Android applications.
+*   🌐 **Retrofit:** A type-safe HTTP client for Android and Java. Used to make API requests to OpenWeatherMap.
+*   📦 **Gson:** A Java serialization/deserialization library to convert JSON into Kotlin objects.
+*   🖇 **View Binding:** Generates binding class for each XML layout file present in that module and allows you to more easily write code that interacts with views.
+*   ☁ **OpenWeatherMap API:** A weather data API used to retrieve weather information.
 
 ## 📋 Prerequisites
 
 Before running the application, ensure you have the following installed:
 
-*   ** 🏗 Android Studio:** The official Integrated Development Environment (IDE) for Android development.
-*   ** 📱 Android SDK:** The Android Software Development Kit, which provides the tools and libraries necessary for building Android applications.
-*   ** ⚙ Gradle:** The build automation system used by Android Studio.
+*   🏗 **Android Studio:** The official Integrated Development Environment (IDE) for Android development.
+*   📱 **Android SDK:** The Android Software Development Kit, which provides the tools and libraries necessary for building Android applications.
+*   ⚙ **Gradle:** The build automation system used by Android Studio.
 
 ## 📥 Installation Instructions
 
