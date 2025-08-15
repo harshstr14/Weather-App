@@ -16,15 +16,15 @@ Weatherly is a simple Android application that provides current weather informat
 ## 📸 Screenshots
 <p align="center">
   <figure style="display:inline-block; margin: 0 10px; text-align:center;">
-    <figcaption style="text-align:center;">Splash Screen</figcaption>
+    <figcaption style="font-weight:bold; margin-bottom:5px;">Splash Screen</figcaption>
     <img src="assets/splach_screen.jpg" alt="Splash Screen" width="250"/>
   </figure>
   <figure style="display:inline-block; margin: 0 10px; text-align:center;">
-    <figcaption style="text-align:center;">Home Screen</figcaption>
+    <figcaption style="font-weight:bold; margin-bottom:5px;">Home Screen</figcaption>
     <img src="assets/home_screen.jpg" alt="Home Screen" width="250"/>
   </figure>
   <figure style="display:inline-block; margin: 0 10px; text-align:center;">
-    <figcaption style="text-align:center;">Search Feature</figcaption>
+    <figcaption style="font-weight:bold; margin-bottom:5px;">Search Feature</figcaption>
     <img src="assets/search_screen.jpg" alt="Search Feature" width="250"/>
   </figure>
 </p>
