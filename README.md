@@ -21,8 +21,8 @@ Weatherly is a simple Android application that provides current weather informat
 </p>
 <p align="left"> 
   <img src="assets/splach_screen.jpg" alt="Splash Screen" width="250"/> 
-  <img src="assets/home_screen.jpg" alt="Home Screen" width="250" height="500/> 
-  <img src="assets/search_screen.jpg" alt="Search Feature" width="250"/> 
+  <img src="assets/home_screen.jpg" alt="Home Screen" width="250"/> 
+  <img src="assets/search_screen.jpg" alt="Search Feature" width="250/> 
 </p>
 
 
