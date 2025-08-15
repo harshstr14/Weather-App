@@ -14,7 +14,7 @@ Weatherly is a simple Android application that provides current weather informat
 *   🚀 **Splash Screen:** A splash screen is displayed on startup for 3 seconds using `MainScreen.kt`.
 
 ## 📸 Screenshots
-<p align="center">
+<div align="center">
   <figure style="display:inline-block; margin: 0 10px; text-align:center;">
     <figcaption style="font-weight:bold; margin-bottom:5px;">Splash Screen</figcaption>
     <img src="assets/splach_screen.jpg" alt="Splash Screen" width="250"/>
@@ -27,7 +27,7 @@ Weatherly is a simple Android application that provides current weather informat
     <figcaption style="font-weight:bold; margin-bottom:5px;">Search Feature</figcaption>
     <img src="assets/search_screen.jpg" alt="Search Feature" width="250"/>
   </figure>
-</p>
+</div>
 
 
 ## 🛠 Technology Stack
