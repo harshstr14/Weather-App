@@ -15,6 +15,7 @@ Weatherly is a simple Android application that provides current weather informat
 
 ## 📸 Screenshots
 <p align="center"> 
+  <br><br>
   ### 🌞 Day Mode
   <img src="assets/splach_screen.jpg" alt="Splash Screen" width="250"/> 
   
