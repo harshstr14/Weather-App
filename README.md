@@ -13,7 +13,9 @@ Weatherly is a simple Android application that provides current weather informat
 *   🎨 **Dynamic Background:** Changes the background of the app based on the current weather conditions.
 *   🚀 **Splash Screen:** A splash screen is displayed on startup for 3 seconds using `MainScreen.kt`.
 
-## 🖼 Screenshots
+## 📸 Screenshots
+| Splash Screen | Home Screen | Search |
+| ![](assets/splach_screen.jpg) | ![](assets/home_screen.jpg) | ![](assets/search_screen.jpg) |
 
 ## 🛠 Technology Stack
 
