@@ -1,10 +1,10 @@
-#🌦️ Weatherly - Android Weather Application
+# 🌦️ Weatherly - Android Weather Application
 
-##📜 Description
+## 📜 Description
 
 Weatherly is a simple Android application that provides current weather information for a specified city. It fetches weather data from the OpenWeatherMap API and displays details such as temperature, humidity, wind speed, sunrise/sunset times, and general weather conditions. The application also features a custom search view that allows users to search for weather information for different cities.
 
-##✨ Features and Functionality
+## ✨ Features and Functionality
 
 *   **🔍 City Search:** Allows users to search for weather information by city name using a custom search view.
 *   **⏱ Real-time Weather Data:** Displays current weather information, including temperature, minimum/maximum temperature, humidity, wind speed, and pressure.
