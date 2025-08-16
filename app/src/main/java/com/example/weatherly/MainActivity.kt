@@ -85,7 +85,6 @@ class MainActivity : AppCompatActivity() {
             override fun onFailure(call: Call<WeatherApp?>, t: Throwable) {
                 Toast.makeText(this@MainActivity,"Network Error : ${t.message}", Toast.LENGTH_SHORT).show()
             }
-
         })
     }
     private fun getTime(timeStamp: Long): String {
