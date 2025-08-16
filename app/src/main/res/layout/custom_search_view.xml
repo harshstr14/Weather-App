@@ -23,7 +23,7 @@
         android:layout_gravity="center_vertical"
         android:background="@android:color/transparent"
         android:hint="Search City"
-        android:textColorHint="@color/black"
+        android:textColorHint="#707B81"
         android:imeOptions="actionSearch"
         android:inputType="text"
         android:textCursorDrawable="@drawable/custom_cursor"
