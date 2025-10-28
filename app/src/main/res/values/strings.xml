@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Weatherly</string>
     <string name="todo">TODO</string>
+    <string name="key">4e80ec179dc79ae2f18c4df636089253</string>
 </resources>
