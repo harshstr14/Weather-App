@@ -17,6 +17,14 @@ Weatherly is a simple Android application that provides real-time weather inform
 *   🌓 **Status Bar Theme :** Adapts the status bar icon theme to the current device theme.
 *   🚨 **Error Handling :** Displays informative Toast messages for network errors and location fetching failures.
 
+## 📸 Screenshots
+
+<p align="left">
+  <img src="assets/splash_screen.png" alt="Details Screen" height="400" hspace=10" />
+  <img src="assets/home_screen.png" alt="Search Screen" height="400" hspace=10" />
+  <img src="assets/search_screen.png" alt="Favourite Screen" height="400" hspace=10" />
+</p>
+
 ## 🧰 Technology Stack
 
 *   💻 **Kotlin :** Primary programming language.
