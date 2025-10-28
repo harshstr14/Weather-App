@@ -75,18 +75,18 @@ Before running the Weatherly app, ensure you have the following:
 
 ## 📖 Usage Guide
 
-1.  🚀**Launch the App :**
+1.  🚀 **Launch the App :**
 
     *   The app will display a splash screen first using `MainScreen.kt`
     *   After the splash screen, the main activity `MainActivity.kt` launches, showing the weather for "jaipur" by default.
 
-2.  🔍**Search for a City :**
+2.  🔍 **Search for a City :**
 
     *   Use the `CustomSearchView.kt` to search for a city.
     *   Type the city name in the search bar and press the search icon.
     *   The app will fetch and display the weather data for the searched city.
 
-3.  🌈**View Weather Details :**
+3.  🌈 **View Weather Details :**
 
     *   The app will display the temperature, humidity, wind speed, sunrise, sunset and condition of the city searched.
     *   The background and icon will change dynamically based on the condition using the `changeBackground` method in `MainActivity.kt`.
