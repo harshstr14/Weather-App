@@ -3,7 +3,9 @@ package com.example.weatherly
 import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
+import android.view.View
 import android.view.inputmethod.EditorInfo
+import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.LinearLayout
@@ -34,6 +36,7 @@ class CustomSearchView(context: Context, attributeSet: AttributeSet ?= null):
         editText.setOnEditorActionListener { _, actionId, _ ->
             if (actionId == EditorInfo.IME_ACTION_SEARCH) {
                 listener?.onQueryTextSubmit(editText.text.toString().trim())
+                hideKeyboard(editText)
                 true
             } else false
         }
@@ -44,5 +47,9 @@ class CustomSearchView(context: Context, attributeSet: AttributeSet ?= null):
     }
     fun setOnQueryTextListener(l: OnQueryTextListener) {
         listener = l
+    }
+    private fun hideKeyboard(view: View) {
+        val imm = context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        imm.hideSoftInputFromWindow(view.windowToken,0)
     }
 }

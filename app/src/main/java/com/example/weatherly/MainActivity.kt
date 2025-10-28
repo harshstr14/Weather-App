@@ -63,7 +63,9 @@ class MainActivity : AppCompatActivity() {
             .build()
             .create(ApiInterface::class.java)
 
-        val retrofitData = retrofit.getWeatherData(cityName,"${R.string.key}","metric")
+        val apiKey = getString(R.string.key)
+
+        val retrofitData = retrofit.getWeatherData(cityName,apiKey,"metric")
         retrofitData.enqueue(object :Callback<WeatherApp>{
             override fun onResponse(call: Call<WeatherApp?>, response: Response<WeatherApp?>) {
                 val responseBody = response.body()
