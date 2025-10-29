@@ -13,7 +13,7 @@
         android:id="@+id/lottieAnimationView"
         android:layout_width="190dp"
         android:layout_height="190dp"
-        android:layout_marginTop="290dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
