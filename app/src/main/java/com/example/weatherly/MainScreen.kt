@@ -7,12 +7,10 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.view.View
-import androidx.activity.ComponentActivity
+import android.view.ViewGroup
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import android.view.ViewGroup
 import androidx.core.view.ViewCompat
-import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.core.view.updateLayoutParams
@@ -22,12 +20,14 @@ class MainScreen : AppCompatActivity() {
     private lateinit var binding: ActivityMainScreenBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        binding = ActivityMainScreenBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
+        binding = ActivityMainScreenBinding.inflate(layoutInflater)
         enableEdgeToEdge()
         setContentView(binding.root)
 
-        enableEdgeToEdgeWithInsets(binding.root,binding.main)
+        binding.root.post {
+            handleBottomNavPosition()
+        }
         setStatusBarIconsTheme(this)
 
         Handler(Looper.getMainLooper()).postDelayed({
@@ -36,20 +36,29 @@ class MainScreen : AppCompatActivity() {
             finish()
         },3000)
     }
-    private fun enableEdgeToEdgeWithInsets(rootView: View, LayoutView: View) {
-        val activity = rootView.context as ComponentActivity
-        WindowCompat.setDecorFitsSystemWindows(activity.window, false)
+    private fun handleBottomNavPosition() {
+        ViewCompat.getRootWindowInsets(binding.root)?.let { insets ->
 
-        ViewCompat.setOnApplyWindowInsetsListener(rootView) { _, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            val navBarHeight =
+                insets.getInsets(WindowInsetsCompat.Type.navigationBars()).bottom
 
-            LayoutView.updateLayoutParams<ViewGroup.MarginLayoutParams> {
-                bottomMargin = systemBars.bottom
+            // Typical values:
+            // Gesture: 16–24dp
+            // 3-button: 48–80dp
+
+            val threshold = 40.dpToPx(binding.root)
+
+            binding.root.updateLayoutParams<ViewGroup.MarginLayoutParams> {
+                bottomMargin = if (navBarHeight > threshold) {
+                    navBarHeight   // 3-button → move up
+                } else {
+                    0              // Gesture → stay at bottom
+                }
             }
-
-            insets
         }
     }
+    private fun Int.dpToPx(view: View): Int =
+        (this * view.resources.displayMetrics.density).toInt()
     private fun setStatusBarIconsTheme(activity: Activity) {
         val window = activity.window
         val decorView = window.decorView
