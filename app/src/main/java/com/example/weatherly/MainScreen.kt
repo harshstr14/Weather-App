@@ -3,6 +3,7 @@ package com.example.weatherly
 import android.app.Activity
 import android.content.Intent
 import android.content.res.Configuration
+import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -11,6 +12,7 @@ import android.view.ViewGroup
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
+import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.core.view.updateLayoutParams
@@ -25,9 +27,19 @@ class MainScreen : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(binding.root)
 
-        binding.root.post {
-            handleBottomNavPosition()
+        WindowCompat.setDecorFitsSystemWindows(window, false)
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            window.isNavigationBarContrastEnforced = false
         }
+
+        WindowInsetsControllerCompat(
+            window,
+            window.decorView
+        ).isAppearanceLightNavigationBars = false
+
+        handleBottomNavPosition()
+
         setStatusBarIconsTheme(this)
 
         Handler(Looper.getMainLooper()).postDelayed({
@@ -37,10 +49,9 @@ class MainScreen : AppCompatActivity() {
         },3000)
     }
     private fun handleBottomNavPosition() {
-        ViewCompat.getRootWindowInsets(binding.root)?.let { insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(binding.root) { _, insets ->
 
-            val navBarHeight =
-                insets.getInsets(WindowInsetsCompat.Type.navigationBars()).bottom
+            val navBarHeight = insets.getInsets(WindowInsetsCompat.Type.navigationBars()).bottom
 
             // Typical values:
             // Gesture: 16–24dp
@@ -55,6 +66,8 @@ class MainScreen : AppCompatActivity() {
                     0              // Gesture → stay at bottom
                 }
             }
+
+            insets
         }
     }
     private fun Int.dpToPx(view: View): Int =
